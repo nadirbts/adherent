@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        <menu type="context" id="popup-menu">
+           <h3>Menu</h3>
+           <menuitem><a href="{{path('adherent')}}">Page d'accueil des adherent</a></menuitem>
+          |
+           <menuitem><a href="{{path('adherentinscrit')}}">Page d'incription</a></menuitem>
+           <hr>
+        </menu>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
